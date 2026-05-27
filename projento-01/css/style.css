@@ -1,0 +1,25 @@
+/* Customizações adicionais para a identidade visual do projeto */
+
+:root {
+    --brand-blue: #1E40AF;
+}
+
+/* Suavização de scroll para melhor experiência do usuário (UX) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Feedback visual personalizado para seleção de texto */
+::selection {
+    background-color: var(--brand-blue);
+    color: #ffffff;
+}
+
+/* Ajustes finos adicionais para efeito de Hover de Cards */
+#servicos .grid>div {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#servicos .grid>div:hover {
+    transform: translateY(-5px);
+}
